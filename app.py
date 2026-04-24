@@ -1,8 +1,10 @@
-try:
-    number = int(input("Введіть ціле число: "))
-    if number % 2 == 0:
-        print(f"Число {number} — парне.")
-    else:
-        print(f"Число {number} — непарне.")
-except ValueError:
-    print("Помилка: введіть ціле число!")
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Ділення на нуль неможливе")
+    return a / b
